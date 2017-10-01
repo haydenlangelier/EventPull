@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0315ED5DBE894AD1AEDF14CC /* libPods-EventPull.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B14AB271C6C797A6E2815B89 /* libPods-EventPull.a */; };
 		EAAC45BE1F817E3F0031E6A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAC45BD1F817E3F0031E6A0 /* AppDelegate.swift */; };
 		EAAC45C01F817E3F0031E6A0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAC45BF1F817E3F0031E6A0 /* FirstViewController.swift */; };
 		EAAC45C21F817E3F0031E6A0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAC45C11F817E3F0031E6A0 /* SecondViewController.swift */; };
@@ -14,6 +15,7 @@
 		EAAC45C71F817E3F0031E6A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAAC45C61F817E3F0031E6A0 /* Assets.xcassets */; };
 		EAAC45CA1F817E3F0031E6A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAAC45C81F817E3F0031E6A0 /* LaunchScreen.storyboard */; };
 		EAAC45D51F817E3F0031E6A0 /* EventPullTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAC45D41F817E3F0031E6A0 /* EventPullTests.swift */; };
+		EAAC45E01F8193270031E6A0 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = EAAC45DF1F8193270031E6A0 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84509FBA560AA8BF2867AC16 /* Pods-EventPull.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventPull.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventPull/Pods-EventPull.release.xcconfig"; sourceTree = "<group>"; };
+		B14AB271C6C797A6E2815B89 /* libPods-EventPull.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EventPull.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAEEC8946E71EEDCAA0703C5 /* Pods-EventPull.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventPull.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventPull/Pods-EventPull.debug.xcconfig"; sourceTree = "<group>"; };
 		EAAC45BA1F817E3F0031E6A0 /* EventPull.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventPull.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAAC45BD1F817E3F0031E6A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAAC45BF1F817E3F0031E6A0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +43,7 @@
 		EAAC45D01F817E3F0031E6A0 /* EventPullTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventPullTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAAC45D41F817E3F0031E6A0 /* EventPullTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPullTests.swift; sourceTree = "<group>"; };
 		EAAC45D61F817E3F0031E6A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAAC45DF1F8193270031E6A0 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0315ED5DBE894AD1AEDF14CC /* libPods-EventPull.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +65,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2ABEDEAABE777483A0C3B861 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DAEEC8946E71EEDCAA0703C5 /* Pods-EventPull.debug.xcconfig */,
+				84509FBA560AA8BF2867AC16 /* Pods-EventPull.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EAAC45B11F817E3E0031E6A0 = {
 			isa = PBXGroup;
 			children = (
+				EAAC45DF1F8193270031E6A0 /* Podfile */,
 				EAAC45BC1F817E3F0031E6A0 /* EventPull */,
 				EAAC45D31F817E3F0031E6A0 /* EventPullTests */,
 				EAAC45BB1F817E3F0031E6A0 /* Products */,
+				2ABEDEAABE777483A0C3B861 /* Pods */,
+				FC42779807B0924E0603D9F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +118,14 @@
 			path = EventPullTests;
 			sourceTree = "<group>";
 		};
+		FC42779807B0924E0603D9F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B14AB271C6C797A6E2815B89 /* libPods-EventPull.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +133,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAAC45D91F817E3F0031E6A0 /* Build configuration list for PBXNativeTarget "EventPull" */;
 			buildPhases = (
+				3CEE1C64C7BE115F5108425D /* [CP] Check Pods Manifest.lock */,
 				EAAC45B61F817E3E0031E6A0 /* Sources */,
 				EAAC45B71F817E3E0031E6A0 /* Frameworks */,
 				EAAC45B81F817E3E0031E6A0 /* Resources */,
+				CABA8048440958AADEDB89E8 /* [CP] Embed Pods Frameworks */,
+				B69315F09E39520B9ED43991 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -184,6 +214,7 @@
 			files = (
 				EAAC45CA1F817E3F0031E6A0 /* LaunchScreen.storyboard in Resources */,
 				EAAC45C71F817E3F0031E6A0 /* Assets.xcassets in Resources */,
+				EAAC45E01F8193270031E6A0 /* Podfile in Resources */,
 				EAAC45C51F817E3F0031E6A0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,6 +227,61 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CEE1C64C7BE115F5108425D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EventPull-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B69315F09E39520B9ED43991 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EventPull/Pods-EventPull-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventPull/Pods-EventPull-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CABA8048440958AADEDB89E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventPull/Pods-EventPull-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EAAC45B61F817E3E0031E6A0 /* Sources */ = {
@@ -355,6 +441,7 @@
 		};
 		EAAC45DA1F817E3F0031E6A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAEEC8946E71EEDCAA0703C5 /* Pods-EventPull.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -369,6 +456,7 @@
 		};
 		EAAC45DB1F817E3F0031E6A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84509FBA560AA8BF2867AC16 /* Pods-EventPull.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
